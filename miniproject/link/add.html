@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>miniproject cat</title>
+
+    <style>
+        .row>div {
+            background: lightblue;
+            border: 1px solid black;
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">CAT Shop</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active"><a href="add.html">Add+</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>เพิ่มข้อมูลแมว</h1>
+        <form action="insert.php" method="POST">
+            <label for="catID">รหัสแมว : </label>
+            <input type="text" id="catID" name="catID" placeholder="ใส่รหัสของน้องแมว 4 หลัก" maxlength="4"><br><br>
+            <label for="catType">แมวพันธุ์ : </label>
+            <input type="text" id="catType" name="catType" placeholder="ใส่พันธุ์ของแมว" maxlength="50"><br><br>
+            <label for="catDetail">ข้อมูลแมว : </label>
+            <input type="text" id="catDetail" name="catDetail" placeholder="ใส่ข้อมูลของน้องแมว" maxlength="255"><br><br>
+            <input type="submit" value="บันทึก" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+
+</html>
